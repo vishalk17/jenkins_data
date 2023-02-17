@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2023-01-03 04:19:09.34 UTC</timestamp>
+  <md5sum>a982aafeda9238f41b8fa87ac787fd23</md5sum>
+  <fileName>org.eclipse.jetty.websocket:websocket-api-9.4.8.v20171121.jar</fileName>
+  <usages>
+    <entry>
+      <string>hello_word_war_deploy</string>
+      <ranges>16</ranges>
+    </entry>
+    <entry>
+      <string>hello_word_war_deploy/sparkjava-hello-world:sparkjava-hello-world</string>
+      <ranges>16</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,9 @@
+commit 065a4890ebfc717af1461b97cb3a4b408417dc13
+tree 6acb6bcafb3193df8df10010b8215a3218593a1b
+parent 8f90dcc5ee4e8fbe388108fa95b6ebe2ebdc7f0e
+author vishalk17 <vishalkapadi95@gmail.com> 2023-01-06 00:27:22 -0800
+committer GitHub <noreply@github.com> 2023-01-06 00:27:22 -0800
+
+    deploy on test instance
+
+:100644 100644 b7e8dd367c9edf07f210898150b0a5814dc83403 2babdf258898b4881efb208149e3d36b592f53cf M	Jenkinsfile

@@ -1,0 +1,323 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1254.v3f64639b_11dd">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>vishalk17</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@629.vb_5627b_ee2104">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5">
+      <stagesUUID>9c953605-ddc7-4c50-b88b-cce98333e27f</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2118.v31fd5b_9944b_5">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>parallel stage</name>
+                <branches/>
+                <parallel>
+                  <stages>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <name>compiled war on master</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              <name>sh</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                <arguments class="linked-hash-map">
+                                  <entry>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                      <key>script</key>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      <value class="string">mvn clean install</value>
+                                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                  </entry>
+                                </arguments>
+                              </args>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <agent>
+                        <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                          <value class="string">slave1</value>
+                        </variables>
+                        <agentType>
+                          <key>label</key>
+                        </agentType>
+                      </agent>
+                      <name>download/unzip tomcat on slave1</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                              <name>dir</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                                <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                                  <value class="string">/mnt/tools</value>
+                                </value>
+                              </args>
+                              <children>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                  <name>sh</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>script</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.zip</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                  <name>sh</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>script</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">unzip apache*tomcat*.zip</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                  <name>sh</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>script</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">chmod +x apache*tomcat*/bin/*</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              </children>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                      <agent>
+                        <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                          <value class="string">slave2</value>
+                        </variables>
+                        <agentType>
+                          <key>label</key>
+                        </agentType>
+                      </agent>
+                      <name>download/unzip tomcat on slave 2</name>
+                      <branches>
+                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                          <name>default</name>
+                          <steps>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                              <name>dir</name>
+                              <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTSingleArgument">
+                                <value class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
+                                  <value class="string">/mnt/tools</value>
+                                </value>
+                              </args>
+                              <children>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                  <name>sh</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>script</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.zip</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                  <name>sh</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>script</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">unzip apache*tomcat*.zip</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                                  <name>sh</name>
+                                  <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                                    <arguments class="linked-hash-map">
+                                      <entry>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                          <key>script</key>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                          <value class="string">chmod +x apache*tomcat*/bin/*</value>
+                                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                      </entry>
+                                    </arguments>
+                                  </args>
+                                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                              </children>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTTreeStep>
+                          </steps>
+                        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                      </branches>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                  </stages>
+                  <uuid>01addd9c-a781-4041-acb7-b21c36c2ca48</uuid>
+                </parallel>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>9c953605-ddc7-4c50-b88b-cce98333e27f</uuid>
+          </stages>
+          <agent>
+            <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTClosureMap">
+              <variables class="linked-hash-map">
+                <entry>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                    <key>label</key>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                    <value class="string">master</value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                </entry>
+                <entry>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                    <key>customWorkspace</key>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                    <value class="string">/mnt/hello-word</value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                </entry>
+              </variables>
+            </variables>
+            <agentType>
+              <key>node</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+  </actions>
+  <queueId>264</queueId>
+  <timestamp>1673078486250</timestamp>
+  <startTime>1673078486253</startTime>
+  <result>FAILURE</result>
+  <duration>6482</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>/* compile war on master and install tomcat server on slaves 1,2
+
+*/
+pipeline{
+    agent{
+        node{
+        label &apos;master&apos;
+        customWorkspace &apos;/mnt/hello-word&apos;
+        }
+    }
+
+	stages{
+		stage (&apos;parallel stage&apos;){
+		parallel{
+		stage(&apos;compiled war on master&apos;){
+			steps{
+			sh &apos;mvn clean install&apos;
+			}
+		}
+		stage(&apos;download/unzip tomcat on slave1&apos;){
+			agent {
+				label &apos;slave1&apos;
+			}
+			steps{
+			dir(&apos;/mnt/tools&apos;){
+			sh &apos;wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.zip&apos;
+			sh &apos;unzip apache*tomcat*.zip&apos;
+			sh &apos;chmod +x apache*tomcat*/bin/*&apos;
+			}
+			}
+		}
+		stage(&apos;download/unzip tomcat on slave 2&apos;){
+			agent {
+				label &apos;slave2&apos;
+			}
+			steps{
+			dir(&apos;/mnt/tools&apos;){
+			sh &apos;wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.70/bin/apache-tomcat-9.0.70.zip&apos;
+			sh &apos;unzip apache*tomcat*.zip&apos;
+			sh &apos;chmod +x apache*tomcat*/bin/*&apos;
+			}
+			}
+		}
+		}
+		}
+	}
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>331608829</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>3047305141</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>5563402319</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>409704140</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1178268113</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>60</iota>
+    <head>1:60</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

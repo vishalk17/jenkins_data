@@ -1,0 +1,14 @@
+Started on Jan 14, 2023, 6:36:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 04cf64ecc86abb7220732f45a2d9437a75e4818d (refs/remotes/origin/main)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+using credential git token
+ > git --version # timeout=10
+ > git --version # 'git version 2.38.1'
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h -- https://github.com/vishalk17/temp-index # timeout=10
+Found 3 remote heads on https://github.com/vishalk17/temp-index
+[poll] Latest remote head revision on refs/heads/main is: 6996dd1c1635ab8a86882b29fb9b8c4dfb31835a
+Done. Took 0.56 sec
+Changes found

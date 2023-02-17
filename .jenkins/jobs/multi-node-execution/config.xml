@@ -1,0 +1,67 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1254.v3f64639b_11dd">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3583.v4f58de0d78d5">
+    <script>pipeline{
+	agent {
+	    node {
+	    label &apos;master&apos;						// it is mandatory to mention node syntax in case of customWorkspace
+	    customWorkspace &apos;/vishal/pipeline&apos; // set customWorkspace
+	    }
+	}
+	
+	stages{
+		stage (&quot;stage-1&quot;){
+			steps {
+				echo &quot;this is stage 1&quot;
+			}
+		}
+		stage (&quot;create file in another location&quot;){
+			steps {
+			dir(&quot;/mnt/temp&quot;){
+				sh &quot;touch file2&quot;
+			}
+			}
+		}
+/**		stage (&apos;execute on slave1&apos;){
+		agent {
+			label &apos;slave1&apos;
+		}
+			steps{
+			dir(&apos;/home/ec2-user&apos;){	//// files will be created in csw /home/ec2-user
+				sh &quot;pwd&quot;
+				sh &quot;touch file1 file2 file3&quot;
+			}
+			}
+			} **/
+		stage (&apos;execute on slave2&apos;){
+		agent {
+			label &apos;slave2&apos;
+		}
+			steps{
+				sh &quot;pwd&quot;
+				sh &quot;touch file1 file2 file3&quot; // files will be created in default remote directory /home/ec2-user/workspace/name/
+											// so it is important for you to define workspace directory if u have changed before in script
+			}
+		}
+		
+		
+		
+	}
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

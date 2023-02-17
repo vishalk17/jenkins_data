@@ -1,0 +1,45 @@
+Started by an SCM change
+Running as SYSTEM
+Building on the built-in node in workspace /mnt/project1
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+using credential git token
+Cloning the remote Git repository
+Cloning repository https://github.com/vishalk17/temp-index
+ > git init /mnt/project1 # timeout=10
+Fetching upstream changes from https://github.com/vishalk17/temp-index
+ > git --version # timeout=10
+ > git --version # 'git version 2.38.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/vishalk17/temp-index +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/vishalk17/temp-index # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 6996dd1c1635ab8a86882b29fb9b8c4dfb31835a (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6996dd1c1635ab8a86882b29fb9b8c4dfb31835a # timeout=10
+Commit message: "Update Jenkinsfile"
+ > git rev-list --no-walk 04cf64ecc86abb7220732f45a2d9437a75e4818d # timeout=10
+[project1] $ /bin/sh -xe /mnt/tools/apache-tomcat-9.0.71/temp/jenkins3654412062446299632.sh
++ pwd
+/mnt/project1
++ ls
+index.html
+Jenkinsfile
++ yum install httpd -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package httpd-2.4.54-1.amzn2.x86_64 already installed and latest version
+Nothing to do
++ sleep 5
++ ls
+index.html
+Jenkinsfile
++ chmod 777 index.html
++ cp index.html /var/www/html
++ service httpd start
+Redirecting to /bin/systemctl start httpd.service
+Triggering a new build of [8mha:////4OssoJ+iocUAFDVJXpqtl0wo8kQ1TOGOtXTgeXOxd2xbAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZp/az8JP2M1Jyc/Pjy/KKU+PLEoviU1IKc/Ep9AFvhpXPQAAAA[0mhello_word_war_deploy
+Finished: SUCCESS

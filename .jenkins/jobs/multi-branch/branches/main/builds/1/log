@@ -1,0 +1,86 @@
+Branch indexing
+ > git rev-parse --resolve-git-dir /root/.jenkins/caches/git-e39e6579280905e39cc5c56c1938f533/.git # timeout=10
+Setting origin to https://github.com/vishalk17/temp-index
+ > git config remote.origin.url https://github.com/vishalk17/temp-index # timeout=10
+Fetching origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git --version # 'git version 2.38.1'
+ > git config --get remote.origin.url # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/dev
+Seen branch in repository origin/main
+Seen branch in repository origin/test
+Seen 3 remote branches
+Obtained Jenkinsfile from e743e32910a91443ce1dc8161adebf923437ede2
+[8mha:////4D5hWKKO1BjC6bwlEGbnq6rZMosog3+rV75aoQ+J4aJXAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4E/ZtxRgBTaH5xgckU6GK1G72eg+1EqLkrqh7QgIVibWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4Eu300dTN2rrxSExw4nArNZCiZrAOP2qQfMgkJ2HCxNRAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYJ/dzEvMT0VP3k/NyC0pLUIv3inMSyVCN9AG1zquLNAAAA[0mslave2 in /home/ec2-user/workspace/multi-branch_main
+[8mha:////4DFmM27lmHTsVSDxrhVkT7oSG5mAZ9VstBTHqHrm+745AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4OMYYk1/Yo8NR1pQOGnI0BJH4vHPaCbHr88YjCRi/5WuAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] ws
+Running in /mnt/website@3
+[8mha:////4JFWLkcNbTknKWm3T1slIFZ5YEZgUscvOcy0c2HBL/3pAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4AcO6Txa9ZgpJy6Y4nzXY3pSpAM/r5wT/XIShNsGvyaRAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] stage
+[8mha:////4CHiaNUg7HTmCKnfpuj3uFDzC4/1odq62vinZAfEg7hOAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4D2TMdje+eqQCLkHJcUwU9w+GNq45nQ2BWiJ9VVCe3YpAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaoyVLaHxBMgiwpL/WWDdrTyRV/MOEjexcpJJ5k3zXm9Y5wQnSpZ7g73DrB2PYbR18YlSfws0cU9XrgkzBcOlmSR15rygpGJgCWtgJWBjUAfKDm2BrfDqodqg0LaXkup3FNC4boAnMFHNRaXyhTnB7j52mfDn+SuAORZg+9pD/AAeoCAqvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+using credential git token
+Cloning the remote Git repository
+Cloning with configured refspecs honoured and without tags
+Cloning repository https://github.com/vishalk17/temp-index
+ > git init /mnt/website@3 # timeout=10
+Fetching upstream changes from https://github.com/vishalk17/temp-index
+ > git --version # timeout=10
+ > git --version # 'git version 2.38.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --no-tags --force --progress -- https://github.com/vishalk17/temp-index +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+Checking out Revision e743e32910a91443ce1dc8161adebf923437ede2 (main)
+Commit message: "Update index.html"
+First time build. Skipping changelog.
+[8mha:////4Ewd2VKLZXssu4H63Z1X92vyj7hIZca0A6oQGl4Am93gAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBDglR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8Brmfz270AAAA=[0m[Pipeline] }
+[8mha:////4D0NYHCjntJhiZ0xRZwSsO72YG2ElXz6J/guLWIVk3X9AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIMlYVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8Aj1Msdr0AAAA=[0m[Pipeline] // stage
+[8mha:////4K/Y00+dFyoVdhozpY/YoJbJA0qaartLySLspCXCGwpjAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjKGgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxWb7OZZvfPyORMEAAAA=[0m[Pipeline] withEnv
+[8mha:////4LZNdtoN93ndGNXSWs+fSeizya9VG2zI+DBbPC3hujWoAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4N/U/bYuppH34cs7hTsi8mDCOSyYwZjRsz9ZF5GQKnClAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] stage
+[8mha:////4Klo7HepSHwpewklW0cmbqp+yvnvhvGLurRSXFgPDFrtAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (installing httpd)
+[8mha:////4CApe6bMONiv5Z4aDHiFp8dvvlDO3JkIWRyPb8mODkTdAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LjSKW+AAAA[0m[Pipeline] sh
+ > git config remote.origin.url https://github.com/vishalk17/temp-index # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e743e32910a91443ce1dc8161adebf923437ede2 # timeout=10
++ sudo yum install httpd -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Existing lock /var/run/yum.pid: another copy is running as pid 4918.
+Another app is currently holding the yum lock; waiting for it to exit...
+  The other application is: yum
+    Memory :  45 M RSS (443 MB VSZ)
+    Started: Fri Jan  6 08:25:52 2023 - 00:03 ago
+    State  : Running, pid: 4918
+Package httpd-2.4.54-1.amzn2.x86_64 already installed and latest version
+Nothing to do
+[8mha:////4NRGeaXk+Cxfe3xol9A3/702R22g747AitXCe3niXRjcAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCkSBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQGOY4V7vgAAAA==[0m[Pipeline] }
+[8mha:////4DnulJ07UfN2WbfzMLFLp0aSmdMTTZ8tXjZRswdfUA8vAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJAokRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g3N4dT9vgAAAA==[0m[Pipeline] // stage
+[8mha:////4PBvMRJ5jmbTckja+8zCwI+woIlazLBbSXXgpAkZFejjAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUiAkhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD21FAanCAAAA[0m[Pipeline] stage
+[8mha:////4JBojHxFWqJEaM6MKWdS01Ohnrc0iiiSsBIedbGvh6sAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] { (copy html.index to /var/www/html dir)
+[8mha:////4JgN2L/UKTRcdryNvxTLHxJe5064CEsSKAsVwrG/GpTUAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQo99tP7cIbaOP4NL4AAAA=[0m[Pipeline] sh
++ cp -r index.html /var/www/html/
+[8mha:////4Ez82avf6Df7pYo2BBZK6aM166ntKc7/yyyomyA6Mti+AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKC0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJu8TlHX9qf0b7E/nQb4AAAA=[0m[Pipeline] }
+[8mha:////4MfXUjVpVg2mVmhv5+42zNsHUUT5V6Ffgc2NjJD58tAHAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AEud0rYvgAAAA==[0m[Pipeline] // stage
+[8mha:////4GCzFXfC1Eg0JGWOpA9JiYnJz17OwntQDDhJp3AK/aY1AAAAqB+LCAAAAAAAAP9tjT0OwjAUg1+LOrAycohU/GyoE2vUhROEJoSk0XslSUknTsTVuAOBSkx4sGxL1vd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCg3u2zb/edZvQEuTHckwgAAAA==[0m[Pipeline] stage
+[8mha:////4EFPBe9BHIK5qqSiAu5cr2GRlipRzRiSqRYOt8GxeQx7AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] { (start httpd server)
+[8mha:////4OuF0gRjJX0BlF8Wfdth2qtsCJbqg1d9TKoPH0W2qyQSAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEIWoEpvgAAAA==[0m[Pipeline] sh
++ service httpd start
+Redirecting to /bin/systemctl start httpd.service
+[8mha:////4LRoIiInxTwsJtpYAOYLl54DGTmEJVf6Y0frLcH3IEk9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g3QKkBhvgAAAA==[0m[Pipeline] }
+[8mha:////4Kkd4IDYkj5S9ZFAqd4gwoI5NVlZTTm7ek5/ZWVHWY43AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIQokRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g2TqBHnvgAAAA==[0m[Pipeline] // stage
+[8mha:////4F/lY5s+JHZJf6nAWeaLeiTW1FKQaR3oE3XiVfIAEZM9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdIdd2/wFWvQSZvgAAAA==[0m[Pipeline] }
+[8mha:////4Jsbt/ealqHkgB9ZVG5s43oAuLDdW6Vyv172G6zV8jchAAAApB+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGLDp0SpaC03nMAkxjixdoPt4FSciKtxBywiUTHFaN407/WGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY5trtP7zXe2++AAAA[0m[Pipeline] // withEnv
+[8mha:////4NHp4iID/ajd/1qhDi9Yqsmfa3SYqQV3d6KjLKkCBRDLAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5LutINt/ABLC40y9AAAA[0m[Pipeline] }
+[8mha:////4DEUXSEVXgMkTMMCXykCGX+3ebKFCuajBOOVSq7O0EtbAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPeOlKkr0AAAA=[0m[Pipeline] // ws
+[8mha:////4LvezIwW+PpxX6sZGhPOlFkeeQnFiJ9cfyMxwqGLjuAnAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIU2DlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyshRk+w9e8C3YvQAAAA==[0m[Pipeline] }
+[8mha:////4N0RqBzuhRkLhxnDuuRgDf8t6XStOCfXmn6N87wrUZf4AAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIU2DlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyci/Iyg/tuWn0vQAAAA==[0m[Pipeline] // node
+[8mha:////4PsLoD6czr8t62JK2weIZUZEr0I5PjfhY+cdXoj+48fgAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcXZNsPy6AOvr0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

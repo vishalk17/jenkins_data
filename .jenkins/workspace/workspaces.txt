@@ -1,0 +1,12 @@
+deploy index.html to containers/dev
+loy_index.html_to_containers_dev
+deploy index.html to containers/main
+oy_index.html_to_containers_main
+deploy index.html to containers/test
+oy_index.html_to_containers_test
+multi-branch/dev
+multi-branch_dev
+multi-branch/main
+multi-branch_main
+multi-branch/test
+multi-branch_test

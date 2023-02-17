@@ -1,0 +1,61 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.triggers.SCMTrigger_-BuildAction/>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1214.v1de940103927">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.plugins.git.util.BuildData plugin="git@5.0.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/main</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@4.0.0">
+              <sha1>6996dd1c1635ab8a86882b29fb9b8c4dfb31835a</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/main</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>30</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/vishalk17/temp-index</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.scm.SCMRevisionState_-None/>
+  </actions>
+  <queueId>323</queueId>
+  <timestamp>1673721367663</timestamp>
+  <startTime>1673721367666</startTime>
+  <result>SUCCESS</result>
+  <duration>6844</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/mnt/project1</workspace>
+  <hudsonVersion>2.375.1</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@5.0.0">
+    <authorOrCommitter>false</authorOrCommitter>
+    <showEntireCommitSummaryInChanges>true</showEntireCommitSummaryInChanges>
+  </scm>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set">
+      <string>noreply</string>
+    </c>
+  </culprits>
+</build>

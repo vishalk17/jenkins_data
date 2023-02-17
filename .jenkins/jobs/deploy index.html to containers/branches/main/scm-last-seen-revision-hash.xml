@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.GitBranchSCMRevision plugin="git@5.0.0">
+  <head class="jenkins.plugins.git.GitBranchSCMHead">
+    <name>main</name>
+  </head>
+  <hash>6996dd1c1635ab8a86882b29fb9b8c4dfb31835a</hash>
+</jenkins.plugins.git.GitBranchSCMRevision>

@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2023-01-03 04:19:08.977 UTC</timestamp>
+  <original>
+    <name>hello_word_war_deploy/sparkjava-hello-world:sparkjava-hello-world</name>
+    <number>1</number>
+  </original>
+  <md5sum>04ead129d6f61960c6b47491a696d0c4</md5sum>
+  <fileName>sparkjava-hello-world:sparkjava-hello-world:pom.xml</fileName>
+  <usages>
+    <entry>
+      <string>hello_word_war_deploy</string>
+      <ranges>16</ranges>
+    </entry>
+    <entry>
+      <string>hello_word_war_deploy/sparkjava-hello-world:sparkjava-hello-world</string>
+      <ranges>16</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

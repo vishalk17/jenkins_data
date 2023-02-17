@@ -1,0 +1,12 @@
+Started by upstream project "[8mha:////4OssoJ+iocUAFDVJXpqtl0wo8kQ1TOGOtXTgeXOxd2xbAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZp/az8JP2M1Jyc/Pjy/KKU+PLEoviU1IKc/Ep9AFvhpXPQAAAA[0mhello_word_war_deploy" build number [8mha:////4N9i2rwRc8TgHT7pbIf2MZsdMoc3zWLFm+yH4tj1qlQAAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZZ/az8JP2M1Jyc/Pjy/KKU+PLEoviU1IKc/Ep9Q1MA4U8hj9IAAAA=[0m15
+originally caused by:
+ Started by upstream project "[8mha:////4CjBHqRwcz5Bb8Y/ZG0JyV4bh/PHBopN5qyKT1DHNV9/AAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZF/az8JP2U1IKc/EpVI4PMvJTUCiCdnwckMkpKClL0AZRriq7WAAAA[0mdeploy index on httpd" build number [8mha:////4HrlxzKXq14kvr5GVZPvltw4Q135Syn8ASQ+VEmhXmIIAAAArB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZl/az8JP2U1IKc/EpVI4PMvJTUCiCdnwckMkpKClL0jcwBpo6xK9gAAAA=[0m27
+ originally caused by:
+  Started by an SCM change
+Running as SYSTEM
+Building on the built-in node in workspace /root/.jenkins/workspace/deploy hello world to tomcat
+[deploy hello world to tomcat] $ /bin/sh -xe /mnt/tools/apache-tomcat-9.0.70/temp/jenkins8277467663158070421.sh
++ cp /mnt/vish/target/sparkjava-hello-world-1.0.war sparkjava-hello-world/sparkjava-hello-world/1.0/sparkjava-hello-world-1.0.war /mnt/tools/apache-tomcat-9.0.70/webapps
+cp: cannot stat ‘sparkjava-hello-world/sparkjava-hello-world/1.0/sparkjava-hello-world-1.0.war’: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

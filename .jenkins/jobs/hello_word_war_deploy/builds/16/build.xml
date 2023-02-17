@@ -1,0 +1,151 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.maven.MavenModuleSetBuild plugin="maven-plugin@3.20">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>deploy index on httpd</upstreamProject>
+            <upstreamUrl>job/deploy%20index%20on%20httpd/</upstreamUrl>
+            <upstreamBuild>28</upstreamBuild>
+            <upstreamCauses>
+              <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@5.0.0">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@4.0.0">
+              <sha1>cdcb07e824c3eaa1b6c05ae71a67b1a13c6930be</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>16</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/vishalk17/sparkjava-war-example</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.maven.reporters.MavenAggregatedArtifactRecord>
+      <records/>
+      <parent reference="../../.."/>
+    </hudson.maven.reporters.MavenAggregatedArtifactRecord>
+    <hudson.tasks.Fingerprinter_-FingerprintAction>
+      <record>
+        <entry>
+          <string>org.eclipse.jetty:jetty-server-9.4.8.v20171121.jar</string>
+          <string>77ba4a59440ceb24a7aea5060adb08a6</string>
+        </entry>
+        <entry>
+          <string>sparkjava-hello-world:sparkjava-hello-world-1.0.war</string>
+          <string>bec9ec7c97b10f19fc791f86e8afc2c6</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty:jetty-servlet-9.4.8.v20171121.jar</string>
+          <string>b02628051d9030595ac46aaaf9ea978a</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty.websocket:websocket-common-9.4.8.v20171121.jar</string>
+          <string>866abae06fcf8d1a5e90ce636c7e8d12</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty:jetty-webapp-9.4.8.v20171121.jar</string>
+          <string>934cc6d9aac3a24a69c96dfddb94af1e</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty:jetty-client-9.4.8.v20171121.jar</string>
+          <string>86c16eb0a6f32cdfc38d906c1992e422</string>
+        </entry>
+        <entry>
+          <string>org.slf4j:slf4j-simple-1.7.25.jar</string>
+          <string>722bb90689aecc523e3fe317e1f0984b</string>
+        </entry>
+        <entry>
+          <string>org.slf4j:slf4j-api-1.7.13.jar</string>
+          <string>a5168034046d95e07f4aae3f5e2d1c67</string>
+        </entry>
+        <entry>
+          <string>sparkjava-hello-world:sparkjava-hello-world:pom.xml</string>
+          <string>04ead129d6f61960c6b47491a696d0c4</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty:jetty-http-9.4.8.v20171121.jar</string>
+          <string>57af2d4ce5882a0108c762af272fc7f5</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty.websocket:websocket-server-9.4.8.v20171121.jar</string>
+          <string>bbfe21b2e7180c938721e1ef1fb2fd98</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty.websocket:websocket-api-9.4.8.v20171121.jar</string>
+          <string>a982aafeda9238f41b8fa87ac787fd23</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty:jetty-io-9.4.8.v20171121.jar</string>
+          <string>b7cf135927d91368e8813354c1048f43</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty.websocket:websocket-servlet-9.4.8.v20171121.jar</string>
+          <string>48bad0d6b2d6f9531759dbcc5ee65a15</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty.websocket:websocket-client-9.4.8.v20171121.jar</string>
+          <string>56ef7aa7ab3ba86f391dafb299b2188d</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty:jetty-util-9.4.8.v20171121.jar</string>
+          <string>c3622460f80b2baad98c2b0cc188c05e</string>
+        </entry>
+        <entry>
+          <string>javax.servlet:javax.servlet-api-3.1.0.jar</string>
+          <string>79de69e9f5ed8c7fcb8342585732bbf7</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty:jetty-security-9.4.8.v20171121.jar</string>
+          <string>ec45c08d3ec28099293715e46c41df60</string>
+        </entry>
+        <entry>
+          <string>com.sparkjava:spark-core-2.7.2.jar</string>
+          <string>1c59a69913622d25d39efe91ddbe264a</string>
+        </entry>
+        <entry>
+          <string>org.eclipse.jetty:jetty-xml-9.4.8.v20171121.jar</string>
+          <string>2389d2577916fc18a3c1e0e1af668b92</string>
+        </entry>
+      </record>
+    </hudson.tasks.Fingerprinter_-FingerprintAction>
+  </actions>
+  <queueId>296</queueId>
+  <timestamp>1673718682142</timestamp>
+  <startTime>1673718682147</startTime>
+  <result>SUCCESS</result>
+  <duration>28308</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/mnt/vish</workspace>
+  <hudsonVersion>2.375.1</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@5.0.0">
+    <authorOrCommitter>false</authorOrCommitter>
+    <showEntireCommitSummaryInChanges>true</showEntireCommitSummaryInChanges>
+  </scm>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+  <mavenVersionUsed>3.8.7</mavenVersionUsed>
+</hudson.maven.MavenModuleSetBuild>

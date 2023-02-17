@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>hello_word_war_deploy</upstreamProject>
+            <upstreamUrl>job/hello_word_war_deploy/</upstreamUrl>
+            <upstreamBuild>15</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>deploy index on httpd</upstreamProject>
+                <upstreamUrl>job/deploy%20index%20on%20httpd/</upstreamUrl>
+                <upstreamBuild>27</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.triggers.SCMTrigger_-SCMTriggerCause/>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>290</queueId>
+  <timestamp>1673718232090</timestamp>
+  <startTime>1673718232094</startTime>
+  <result>FAILURE</result>
+  <duration>49</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/root/.jenkins/workspace/deploy hello world to tomcat</workspace>
+  <hudsonVersion>2.375.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

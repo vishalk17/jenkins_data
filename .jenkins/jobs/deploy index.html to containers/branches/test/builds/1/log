@@ -1,0 +1,43 @@
+Branch indexing
+ > git rev-parse --resolve-git-dir /root/.jenkins/caches/git-e39e6579280905e39cc5c56c1938f533/.git # timeout=10
+Setting origin to https://github.com/vishalk17/temp-index
+ > git config remote.origin.url https://github.com/vishalk17/temp-index # timeout=10
+Fetching origin...
+Fetching upstream changes from origin
+ > git --version # timeout=10
+ > git --version # 'git version 2.38.1'
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --force --progress -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Seen branch in repository origin/dev
+Seen branch in repository origin/main
+Seen branch in repository origin/test
+Seen 3 remote branches
+Obtained Jenkinsfile from bef9ad31d9b985c6596909d70e0a698f733a771c
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+WorkflowScript: 28: expecting '}', found '' @ line 28, column 1.
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:309)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
+	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
+	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:349)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:225)
+	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:191)
+	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:233)
+	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:189)
+	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:966)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:626)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:602)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:579)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:323)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:293)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox$Scope.parse(GroovySandbox.java:163)
+	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.doParse(CpsGroovyShell.java:142)
+	at org.jenkinsci.plugins.workflow.cps.CpsGroovyShell.reparse(CpsGroovyShell.java:127)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.parseScript(CpsFlowExecution.java:563)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.start(CpsFlowExecution.java:515)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:336)
+	at hudson.model.ResourceController.execute(ResourceController.java:107)
+	at hudson.model.Executor.run(Executor.java:449)
+Finished: FAILURE

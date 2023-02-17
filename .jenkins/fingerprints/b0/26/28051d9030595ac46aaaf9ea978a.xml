@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2023-01-03 04:19:08.985 UTC</timestamp>
+  <md5sum>b02628051d9030595ac46aaaf9ea978a</md5sum>
+  <fileName>org.eclipse.jetty:jetty-servlet-9.4.8.v20171121.jar</fileName>
+  <usages>
+    <entry>
+      <string>hello_word_war_deploy</string>
+      <ranges>16</ranges>
+    </entry>
+    <entry>
+      <string>hello_word_war_deploy/sparkjava-hello-world:sparkjava-hello-world</string>
+      <ranges>16</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,17 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2023-01-03 04:19:09.66 UTC</timestamp>
+  <md5sum>1c59a69913622d25d39efe91ddbe264a</md5sum>
+  <fileName>com.sparkjava:spark-core-2.7.2.jar</fileName>
+  <usages>
+    <entry>
+      <string>hello_word_war_deploy</string>
+      <ranges>16</ranges>
+    </entry>
+    <entry>
+      <string>hello_word_war_deploy/sparkjava-hello-world:sparkjava-hello-world</string>
+      <ranges>16</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

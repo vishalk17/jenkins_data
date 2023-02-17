@@ -1,0 +1,274 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1254.v3f64639b_11dd">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <jenkins.branch.BranchIndexingCause plugin="branch-api@2.1051.v9985666b_f6cc"/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@631.v9143df5b_e4a_a">
+      <sourceId>bea8a820-4801-411c-92f2-5408e7c75f50</sourceId>
+      <revision class="jenkins.plugins.git.GitBranchSCMRevision" plugin="git@5.0.0">
+        <head class="jenkins.plugins.git.GitBranchSCMHead">
+          <name>test</name>
+        </head>
+        <hash>065a4890ebfc717af1461b97cb3a4b408417dc13</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@629.vb_5627b_ee2104">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2118.v31fd5b_9944b_5">
+      <stagesUUID>f6bb842a-8057-4983-bd61-3d45a2aabe9a</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2118.v31fd5b_9944b_5">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>installing httpd</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">sudo yum install httpd -y</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>copy html.index to /var/www/html dir</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">cp -r index.html /var/www/html/</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>start httpd server</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="string">service httpd start</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>f6bb842a-8057-4983-bd61-3d45a2aabe9a</uuid>
+          </stages>
+          <agent>
+            <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTClosureMap">
+              <variables class="linked-hash-map">
+                <entry>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                    <key>label</key>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                    <value class="string">test</value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                </entry>
+                <entry>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                    <key>customWorkspace</key>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                    <value class="string">/mnt/website</value>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                </entry>
+              </variables>
+            </variables>
+            <agentType>
+              <key>node</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1214.v1de940103927">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <hudson.plugins.git.util.BuildData plugin="git@5.0.0">
+      <buildsByBranchName>
+        <entry>
+          <string>test</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@4.0.0">
+              <sha1>065a4890ebfc717af1461b97cb3a4b408417dc13</sha1>
+              <branches class="singleton-set">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>test</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>2</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/vishalk17/temp-index</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@400.v6b_89a_1317c9a_">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/vishalk17/temp-index</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>253</queueId>
+  <timestamp>1672993730969</timestamp>
+  <startTime>1672993730973</startTime>
+  <result>SUCCESS</result>
+  <duration>11306</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline{
+  agent {
+  node {
+   label &apos;test&apos;
+   customWorkspace &apos;/mnt/website&apos;
+  }
+  }
+  stages {
+    stage (&apos;installing httpd&apos;){
+      steps {
+       sh &quot;sudo yum install httpd -y&quot; 
+      }
+    }
+    stage (&apos;copy html.index to /var/www/html dir&apos;){
+      steps{
+       sh &quot;cp -r index.html /var/www/html/&quot; 
+      }
+    }
+    stage (&apos;start httpd server&apos;){
+      steps{
+       sh &quot;service httpd start&quot;
+      }
+    }
+  }
+}
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>207828017</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>1170233142</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2632190907</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>37886376</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>1288398377</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>35</iota>
+    <head>1:35</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@5.0.0">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <name>origin</name>
+            <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+            <url>https://github.com/vishalk17/temp-index</url>
+            <credentialsId>git token</credentialsId>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>test</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <jenkins.plugins.git.GitSCMSourceDefaults>
+            <includeTags>false</includeTags>
+          </jenkins.plugins.git.GitSCMSourceDefaults>
+          <hudson.plugins.git.extensions.impl.BuildChooserSetting>
+            <buildChooser class="jenkins.plugins.git.AbstractGitSCMSource$SpecificRevisionBuildChooser">
+              <revision reference="../../../../../../../actions/hudson.plugins.git.util.BuildData/buildsByBranchName/entry/hudson.plugins.git.util.Build/marked"/>
+            </buildChooser>
+          </hudson.plugins.git.extensions.impl.BuildChooserSetting>
+        </extensions>
+      </scm>
+      <node>slave2</node>
+      <workspace>/mnt/website</workspace>
+      <changelogFile>/root/.jenkins/jobs/multi-branch/branches/test/builds/2/changelog7286605819505060361.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

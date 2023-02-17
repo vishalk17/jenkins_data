@@ -1,0 +1,110 @@
+Started by user [8mha:////4BSTH4w7uyhmG9pEMRcCIDjMjCEqXdt8w8nYYZqYn6wBAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZ+/dLi1CL9sszijMScbENzACJKU8XEAAAA[0mvishal
+Obtained Jenkinsfile from git https://github.com/vishalk17/sparkjava-war-example
+[8mha:////4D5hWKKO1BjC6bwlEGbnq6rZMosog3+rV75aoQ+J4aJXAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4E/ZtxRgBTaH5xgckU6GK1G72eg+1EqLkrqh7QgIVibWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4NDTu9Z2IyrGiezbOZqgm+n2MCgPb60QEWVdHylpvZzzAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgYZ/dzEvMT0VP3k/NyC0pLUIn2NpNLMnBLdzDxNfQB9z6/O0QAAAA==[0mJenkins in /root/.jenkins/workspace/deploy war on slaves
+[8mha:////4DFmM27lmHTsVSDxrhVkT7oSG5mAZ9VstBTHqHrm+745AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4OMYYk1/Yo8NR1pQOGnI0BJH4vHPaCbHr88YjCRi/5WuAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] ws
+Running in /mnt/hello-word
+[8mha:////4JFWLkcNbTknKWm3T1slIFZ5YEZgUscvOcy0c2HBL/3pAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] {
+[8mha:////4AcO6Txa9ZgpJy6Y4nzXY3pSpAM/r5wT/XIShNsGvyaRAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gwExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jcChmMxwAAAAA==[0m[Pipeline] stage
+[8mha:////4CHiaNUg7HTmCKnfpuj3uFDzC4/1odq62vinZAfEg7hOAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0BAkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfpX/cvwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4D2TMdje+eqQCLkHJcUwU9w+GNq45nQ2BWiJ9VVCe3YpAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaoyVLaHxBMgiwpL/WWDdrTyRV/MOEjexcpJJ5k3zXm9Y5wQnSpZ7g73DrB2PYbR18YlSfws0cU9XrgkzBcOlmSR15rygpGJgCWtgJWBjUAfKDm2BrfDqodqg0LaXkup3FNC4boAnMFHNRaXyhTnB7j52mfDn+SuAORZg+9pD/AAeoCAqvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/vishalk17/sparkjava-war-example
+ > git init /mnt/hello-word # timeout=10
+Fetching upstream changes from https://github.com/vishalk17/sparkjava-war-example
+ > git --version # timeout=10
+ > git --version # 'git version 2.38.1'
+ > git fetch --tags --force --progress -- https://github.com/vishalk17/sparkjava-war-example +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/vishalk17/sparkjava-war-example # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision cdcb07e824c3eaa1b6c05ae71a67b1a13c6930be (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cdcb07e824c3eaa1b6c05ae71a67b1a13c6930be # timeout=10
+Commit message: "Jenkinsfile: remove commented content"
+First time build. Skipping changelog.
+[8mha:////4Ewd2VKLZXssu4H63Z1X92vyj7hIZca0A6oQGl4Am93gAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKBDglR0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8Brmfz270AAAA=[0m[Pipeline] }
+[8mha:////4D0NYHCjntJhiZ0xRZwSsO72YG2ElXz6J/guLWIVk3X9AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIMlYVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8Aj1Msdr0AAAA=[0m[Pipeline] // stage
+[8mha:////4K/Y00+dFyoVdhozpY/YoJbJA0qaartLySLspCXCGwpjAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjKGgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHIHYMxWb7OZZvfPyORMEAAAA=[0m[Pipeline] withEnv
+[8mha:////4LZNdtoN93ndGNXSWs+fSeizya9VG2zI+DBbPC3hujWoAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4N/U/bYuppH34cs7hTsi8mDCOSyYwZjRsz9ZF5GQKnClAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] stage
+[8mha:////4Klo7HepSHwpewklW0cmbqp+yvnvhvGLurRSXFgPDFrtAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (parallel stage)
+[8mha:////4AYYM1m4MXnznv+N3pADtljZBJzypfUC05lGZ3I6cUKHAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] parallel
+[8mha:////4O8TDBgtMkhRJGBNam0OHGDOcW0+SJkf3WzqJoCBcAIBAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] { (Branch: compiled war on master)
+[8mha:////4CL8oihBxn1zMS432OqihlEdM32KgN0Jqhl4TNH3xeByAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] stage
+[8mha:////4EYAhyH3g2PSfwf8oUwFklJmjZrP/Z548H8GN72Tn+/GAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] { (compiled war on master)
+[8mha:////4EG8eQMXwmjV7KNCzTsc4mUuqWmF7kqxygz/R4FUydt2AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] sh
++ /mnt/tools/apache-maven-3.8.7/bin/mvn clean install
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< sparkjava-hello-world:sparkjava-hello-world >-------------
+[INFO] Building sparkjava-hello-world 1.0
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ sparkjava-hello-world ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-java) @ sparkjava-hello-world ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ sparkjava-hello-world ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /mnt/hello-word/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ sparkjava-hello-world ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /mnt/hello-word/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ sparkjava-hello-world ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /mnt/hello-word/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ sparkjava-hello-world ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ sparkjava-hello-world ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ sparkjava-hello-world ---
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.converters.reflection.FieldDictionary (file:/root/.m2/repository/com/thoughtworks/xstream/xstream/1.3.1/xstream-1.3.1.jar) to field java.text.AttributedCharacterIterator$Attribute.name
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.converters.reflection.FieldDictionary
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Packaging webapp
+[INFO] Assembling webapp [sparkjava-hello-world] in [/mnt/hello-word/target/sparkjava-hello-world-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/mnt/hello-word/src/main/webapp]
+[INFO] Webapp assembled in [137 msecs]
+[INFO] Building war: /mnt/hello-word/target/sparkjava-hello-world-1.0.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ sparkjava-hello-world ---
+[INFO] Installing /mnt/hello-word/target/sparkjava-hello-world-1.0.war to /root/.m2/repository/sparkjava-hello-world/sparkjava-hello-world/1.0/sparkjava-hello-world-1.0.war
+[INFO] Installing /mnt/hello-word/pom.xml to /root/.m2/repository/sparkjava-hello-world/sparkjava-hello-world/1.0/sparkjava-hello-world-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.398 s
+[INFO] Finished at: 2023-01-07T08:20:35Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4MOycLgXA/e+MIaHtWM+U5Zdo1/JdVjHxmdCxyc6taJxAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BOW+zlUfPiXWgpW+AAAA[0m[Pipeline] }
+[8mha:////4MREnpEbhMOI1dAG8iJAIXUqwmTgUHDoI9jiHaC8DbTDAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRqZAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrOtf+8AEdlBFkvgAAAA==[0m[Pipeline] // stage
+[8mha:////4A4i5Q2MNkvS1HDPN1COAhu+mwqMUrGbNkmtyV4GK0fAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw8pWvI/vgAAAA==[0m[Pipeline] }
+[8mha:////4BwL9X+ncWHPuwYUjPnhJmdEwt2BhX+Gf0rWtkHhV6NuAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw8HWvBVvgAAAA==[0m[Pipeline] // parallel
+[8mha:////4JcL/AlpEgbOHIpAekxqdd7T5MbyogAyoOVw5+dwweOHAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikFIhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QEY2KUHvgAAAA==[0m[Pipeline] }
+[8mha:////4NK63Vg1YpGuJC0B6Mr44ps8RlyhS6SchIDpRBLpqbGhAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEKJBqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w8gmjb2vgAAAA==[0m[Pipeline] // stage
+[8mha:////4A+zUZFOb4DUVVUew7d3fZ1APSy/mbPEkultceZ3Sbm7AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w8m3A6jvgAAAA==[0m[Pipeline] }
+[8mha:////4PDWGbc8Riw83yXhpCBNRbfgu8+VttnosN1AbWjTF3ibAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRqZAQVVorDS8w8WGcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThyM6JEGS7GzwrvR5CUmDsPV8SR6voiOKbJD0eLUssZmwZYTwpKihJWEDVLnOFoyCbayVw9VOUWmOqeQv6OE0uo7PKGQ2ZxUSF+YA+xuo45MP89fAczeJyjrQ659/QFlXl8lvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4AQBvolSzjjxrkbVGy0R79tFxQif9f999CzQB6vzs+i9AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRKJAQoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/uBdnuA3Zaz7e9AAAA[0m[Pipeline] }
+[8mha:////4JpLfRquSgMccEk0gB50LA2ri00qZTZJLLBYF7+g3aZzAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBQlSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLcVZPsPGLqK6L0AAAA=[0m[Pipeline] // ws
+[8mha:////4I6wil5MaaXak5YaZ/j8psrOFbC3GBpu4VB+2q7FZBWqAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRgg5R0VppeIFJjHFi3QX7QlLxIr7GH4iIRMVWO9PM641lijhydKqx1HpKlVdd6N301MCxvQYeVMMXVTElDlaVdii5tqcZSxaLeVmOhcbKUhU4eXKCtW7MwxTBkCvOEid30Mh9fccTmZ7KYqJ8YYzY3Po6Mf06fwMYu06Q77aCbP8BPqPtor0AAAA=[0m[Pipeline] }
+[8mha:////4OvJxIudd4pbhAMxX3Ny/yzdWqfcXEpaaZWrn2RJvTZRAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkMhon14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfk5V6QlR9NTCl7vQAAAA==[0m[Pipeline] // node
+[8mha:////4OvLGIOEWfkQqkHipa1FR5K3dxrVVVTNAKvURXC18IbxAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkMhon14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfkZSnI9h9rVU4xvQAAAA==[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

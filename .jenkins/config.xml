@@ -1,0 +1,99 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors>
+    <string>hudson.diagnosis.TooManyJobsButNoView</string>
+    <string>hudson.diagnosis.ReverseProxySetupMonitor</string>
+  </disabledAdministrativeMonitors>
+  <version>2.375.1</version>
+  <numExecutors>5</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.FullControlOnceLoggedInAuthorizationStrategy">
+    <denyAnonymousReadAccess>true</denyAnonymousReadAccess>
+  </authorizationStrategy>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <markupFormatter class="hudson.markup.EscapedMarkupFormatter"/>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <description></description>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>12345</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="java.lang.String$CaseInsensitiveComparator"/>
+        <string>create_file_custome_ws</string>
+        <string>deploy index on httpd</string>
+        <string>deploy war on slaves</string>
+        <string>jenkins_file_pr1</string>
+        <string>multi-node-execution</string>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+        <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.4.1"/>
+      </columns>
+      <recurse>false</recurse>
+    </listView>
+    <listView>
+      <owner class="hudson" reference="../../.."/>
+      <name>container-deploy</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="java.lang.String$CaseInsensitiveComparator" reference="../../../listView/jobNames/comparator"/>
+        <string>01-downstream-docker-index.html-deployment</string>
+        <string>deploy index.html to containers</string>
+      </jobNames>
+      <jobFilters/>
+      <columns>
+        <hudson.views.StatusColumn/>
+        <hudson.views.WeatherColumn/>
+        <hudson.views.JobColumn/>
+        <hudson.views.LastSuccessColumn/>
+        <hudson.views.LastFailureColumn/>
+        <hudson.views.LastDurationColumn/>
+        <hudson.views.BuildButtonColumn/>
+        <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.4.1"/>
+      </columns>
+      <recurse>false</recurse>
+    </listView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>36527</slaveAgentPort>
+  <label>master</label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+  <nodeRenameMigrationNeeded>false</nodeRenameMigrationNeeded>
+</hudson>

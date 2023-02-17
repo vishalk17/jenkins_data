@@ -1,0 +1,88 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<user>
+  <version>10</version>
+  <id>vishalk17</id>
+  <fullName>vishal</fullName>
+  <properties>
+    <com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty plugin="credentials@1214.v1de940103927">
+      <domainCredentialsMap class="hudson.util.CopyOnWriteMap$Hash">
+        <entry>
+          <com.cloudbees.plugins.credentials.domains.Domain>
+            <specifications/>
+          </com.cloudbees.plugins.credentials.domains.Domain>
+          <java.util.concurrent.CopyOnWriteArrayList/>
+        </entry>
+      </domainCredentialsMap>
+    </com.cloudbees.plugins.credentials.UserCredentialsProvider_-UserCredentialsProperty>
+    <hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty plugin="email-ext@2.93">
+      <triggers/>
+    </hudson.plugins.emailext.watching.EmailExtWatchAction_-UserProperty>
+    <hudson.model.MyViewsProperty>
+      <views>
+        <hudson.model.AllView>
+          <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
+          <name>all</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+        </hudson.model.AllView>
+        <hudson.model.ListView>
+          <owner class="hudson.model.MyViewsProperty" reference="../../.."/>
+          <name>parameters</name>
+          <filterExecutors>false</filterExecutors>
+          <filterQueue>false</filterQueue>
+          <properties class="hudson.model.View$PropertyList"/>
+          <jobNames>
+            <comparator class="java.lang.String$CaseInsensitiveComparator"/>
+            <string>test</string>
+          </jobNames>
+          <jobFilters/>
+          <columns>
+            <hudson.views.StatusColumn/>
+            <hudson.views.WeatherColumn/>
+            <hudson.views.JobColumn/>
+            <hudson.views.LastSuccessColumn/>
+            <hudson.views.LastFailureColumn/>
+            <hudson.views.LastDurationColumn/>
+            <hudson.views.BuildButtonColumn/>
+            <hudson.plugins.favorite.column.FavoriteColumn plugin="favorite@2.4.1"/>
+          </columns>
+          <recurse>false</recurse>
+        </hudson.model.ListView>
+      </views>
+    </hudson.model.MyViewsProperty>
+    <org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty plugin="display-url-api@2.3.7">
+      <providerId>default</providerId>
+    </org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty>
+    <hudson.model.PaneStatusProperties>
+      <collapsed/>
+    </hudson.model.PaneStatusProperties>
+    <jenkins.security.seed.UserSeedProperty>
+      <seed>9eb6092661614169</seed>
+    </jenkins.security.seed.UserSeedProperty>
+    <hudson.search.UserSearchProperty>
+      <insensitiveSearch>true</insensitiveSearch>
+    </hudson.search.UserSearchProperty>
+    <hudson.model.TimeZoneProperty/>
+    <hudson.security.HudsonPrivateSecurityRealm_-Details>
+      <passwordHash>#jbcrypt:$2a$10$SCFrOWgbn.iLZT5RZx53guoE84GXaXPPQQpsnYsVxzTiQk1Qb6nxm</passwordHash>
+    </hudson.security.HudsonPrivateSecurityRealm_-Details>
+    <hudson.tasks.Mailer_-UserProperty plugin="mailer@438.v02c7f0a_12fa_4">
+      <emailAddress>vishalkapadi95@gmail.com</emailAddress>
+    </hudson.tasks.Mailer_-UserProperty>
+    <jenkins.security.ApiTokenProperty>
+      <tokenStore>
+        <tokenList/>
+      </tokenStore>
+    </jenkins.security.ApiTokenProperty>
+    <jenkins.security.LastGrantedAuthoritiesProperty>
+      <roles>
+        <string>authenticated</string>
+      </roles>
+      <timestamp>1672647317527</timestamp>
+    </jenkins.security.LastGrantedAuthoritiesProperty>
+    <hudson.plugins.favorite.user.FavoriteUserProperty plugin="favorite@2.4.1">
+      <data class="concurrent-hash-map"/>
+    </hudson.plugins.favorite.user.FavoriteUserProperty>
+  </properties>
+</user>

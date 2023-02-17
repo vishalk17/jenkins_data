@@ -1,0 +1,30 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.Queue_-State>
+  <counter>383</counter>
+  <items>
+    <hudson.model.Queue_-BuildableItem>
+      <actions/>
+      <id>383</id>
+      <task class="org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution$PlaceholderTask">
+        <context class="org.jenkinsci.plugins.workflow.cps.CpsStepContext">
+          <executionRef class="org.jenkinsci.plugins.workflow.job.WorkflowRun$Owner">
+            <job>multiple_stages</job>
+            <id>6</id>
+          </executionRef>
+          <id>3</id>
+          <bodyHeads/>
+          <body class="org.jenkinsci.plugins.workflow.cps.StaticBodyReference" resolves-to="org.jenkinsci.plugins.workflow.cps.HandleBodyReference">
+            <id>1</id>
+          </body>
+          <threadId>0</threadId>
+          <stepDescriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</stepDescriptorId>
+        </context>
+        <label>slave1</label>
+        <runId>multiple_stages#6</runId>
+      </task>
+      <inQueueSince>1676537271833</inQueueSince>
+      <buildableStartMilliseconds>1676537271837</buildableStartMilliseconds>
+      <isPending>false</isPending>
+    </hudson.model.Queue_-BuildableItem>
+  </items>
+</hudson.model.Queue_-State>
